@@ -1,0 +1,60 @@
+
+<html>
+	<head>
+		<script>
+
+ 			var lista = "";
+
+ 			var arrayFrutas = [];
+ 			var arrayLegumes = [];
+ 			var arrayLaticinios = [];
+ 			var arrayCongelados = [];
+ 			var arrayDoces = [];
+ 			var arrayLimpeza = [];
+
+
+ 			function pulaLinha() {
+ 				document.write("<br>");
+ 			}
+ 			function mostra(frase) {
+ 				document.write(frase);
+ 					pulaLinha();
+ 			}
+ 		
+
+ 			while(lista != "fim") {
+ 				var itemNome = prompt("Informe o nome do produto do qual deseja inserir na lista.");
+ 				var itemCategoria = prompt("Informe a categoria do item de acordo com a legenda abaixo:\n-Digite 1 para frutas;\n-Digite 2 para legumes;\n-Digite 3 para laticícios;\n-Digite 4 para congelados;\n-Digite 5 para doces;\n-Digite 6 para produtos de limpeza.");
+
+ 				if(itemCategoria == 1) arrayFrutas.push(itemNome);
+ 				if(itemCategoria == 2) arrayLegumes.push(itemNome);
+ 				if(itemCategoria == 3) arrayLaticinios.push(itemNome);
+ 				if(itemCategoria == 4) arrayCongelados.push(itemNome);
+ 				if(itemCategoria == 5) arrayDoces.push(itemNome);
+ 				if(itemCategoria == 6) arrayLimpeza.push(itemNome);
+
+ 				if(lista = prompt("Se quiser adicionar mais produtos aperte ENTER, se quiser finalizar, digite FIM.") == "fim") break;
+
+ 				continue;
+
+ 				
+ 			} 
+ 			 
+ 			 mostra("Lista de compras finalizada, segue lista abaixo:");
+ 			 pulaLinha();
+ 			 mostra("Frutas(" + arrayFrutas.length + " itens): " + arrayFrutas + ".");
+ 			 mostra("Legumes(" + arrayLegumes.length + " itens): " + arrayLegumes + ".");
+ 			 mostra("Laticínios(" + arrayLaticinios.length + " itens): " + arrayLaticinios + ".");
+ 			 mostra("Congelados(" + arrayCongelados.length + " itens): " + arrayCongelados + ".");
+ 			 mostra("Doces(" + arrayDoces.length + " itens): " + arrayDoces + ".");
+ 			 mostra("Limpeza(" + arrayLimpeza.length + " itens): " + arrayLimpeza + ".");
+ 			
+
+
+
+
+	
+	
+		</script>
+	</head>
+</html>

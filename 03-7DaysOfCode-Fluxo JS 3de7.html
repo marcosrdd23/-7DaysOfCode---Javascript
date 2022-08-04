@@ -1,0 +1,46 @@
+
+<html>
+	<head>
+		<script>
+
+
+		let nome = prompt("Informe seu nome:");
+		let especializar = prompt("Informe a opção do qual você deseja se especializar:\n1 para React.\n2 para Vue.\n3 para C#.\n4 para Java.");
+
+		if(especializar == 1 || especializar == 2)alert("Olá, " + nome + " a sua especialização escolhida é para a área de Front-End.");
+		if(especializar == 3 || especializar == 4)alert("Olá, " + nome + " a sua especialização escolhida é para a área de Back-End.");
+		if(especializar != 1 && especializar != 2 && especializar != 3 && especializar != 4)alert("Opção inválida, tente novamente.");
+
+
+		let escolha = prompt("Você pretende se ESPECIALIZAR(digite 1) na área escolhida ou seguir se DESENVOLVENDO(digite 2) para se tornar Fullstack?");
+
+		if(escolha != 1 && escolha != 2) {
+			alert("Opção inválida.");
+		}
+
+		if(escolha == 1) {
+			alert("Você decidiu se especilizar na área escolhida, boa sorte.");				
+		}
+		if(escolha == 2) {
+			alert("Você decidiu continuar o seu desenvolvimento.");
+
+			while(escolha == 2) {
+				var tecnologia = prompt("Em seu desenvolvimento, Tem mais alguma tecnologia que você gostaria de aprender?");
+
+				if(prompt("A sua tecnologia escolhida foi a de " + tecnologia + ".\nGostaria de adicionar mais uma especialização? Se sim digite 'ok'.") == "ok") {
+						escolha == 2;	
+				} else {
+					alert("SAINDO..."); 
+					break;
+				}
+
+			}
+			
+		}
+
+
+	
+	
+		</script>
+	</head>
+</html>

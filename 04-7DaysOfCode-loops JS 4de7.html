@@ -1,0 +1,37 @@
+
+<html>
+	<head>
+		<script>
+
+ 	var tentativas = 1;
+
+	function getRandomArbitrary(max, min) {
+  		return Math.floor(Math.random() * (max - min) + 1 + min);
+  		//O 'Math.random' retorna um ńumero entre dois valores	
+  		//O 'Math.floor' retorna o menor número inteiro'
+	}
+	var numSecreto = getRandomArbitrary(10, 1);
+	
+
+	while(tentativas < 3) {
+	var seuNumero = prompt("Digite um número entre 1 e 10 e adivinhe o número secreto, você possui duas tentativas.");
+		if(seuNumero == numSecreto) {
+			if(tentativas == 1)tentativas = "primeira";
+			if(tentativas == 2)tentativas = "segunda";
+			alert("Você acertou, " + numSecreto + " era o número secreto.\nVocê acertou na " + tentativas + " tentativa.");
+			break;
+		} else 
+			tentativas += 1;
+			if(tentativas == 2) alert("Errou, você ainda tem uma tentativa.");
+			if(tentativas > 2) alert("Errou, você não acertou o número secreto que era " + numSecreto + ".");
+
+		 
+		continue;
+	}
+
+
+	
+	
+		</script>
+	</head>
+</html>
